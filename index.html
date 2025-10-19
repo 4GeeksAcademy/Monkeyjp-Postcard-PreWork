@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<!-- 
+    Esta línea le dice al navegador que este documento está escrito en HTML5, 
+    que es la versión más moderna y estándar del lenguaje HTML.
+    Esto ayuda a que el navegador interprete y muestre correctamente la página.
+-->
+
+<html lang="en">
+<!-- 
+    Este es el elemento raíz que contiene todo lo que ves en la página web.
+    El atributo "lang" indica el idioma principal del contenido, en este caso "en" significa inglés.
+    Esto es importante para los motores de búsqueda y tecnologías de asistencia (como lectores de pantalla).
+-->
+
+<head>
+    <!-- 
+        El <head> es la sección donde colocamos información importante que no se ve en la página, 
+        pero que ayuda a configurar cómo se muestra y funciona.
+        Aquí ponemos cosas como la codificación, el título y enlaces a estilos o fuentes.
+    -->
+
+    <meta charset="UTF-8">
+    <!-- 
+        Esto indica que la página usa la codificación de caracteres UTF-8, 
+        que es un sistema para representar letras, números y símbolos.
+        UTF-8 es el estándar más usado porque puede mostrar casi todos los caracteres de todos los idiomas.
+    -->
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- 
+        Este meta tag es para que la página sea "responsiva", es decir, que se vea bien en teléfonos, tablets y computadoras.
+        Ajusta el ancho de la página al ancho del dispositivo y el nivel de zoom inicial.
+    -->
+
+    <title>Document</title>
+    <!-- 
+        El título que aparece en la pestaña o ventana del navegador.
+        Es importante para que los usuarios sepan qué página tienen abierta y también para los buscadores.
+    -->
+
+    <link rel="stylesheet" href="style.css">
+    <!-- 
+        Aquí estamos diciendo que queremos usar una hoja de estilos externa llamada "style.css" 
+        para darle diseño y colores a nuestra página.
+    -->
+
+    <link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap" rel="stylesheet">
+    <!-- 
+        Este link carga una fuente especial desde Google Fonts llamada "Press Start 2P" 
+        que podemos usar para darle un estilo retro o de videojuego a nuestros textos.
+    -->
+</head>
+
+
+<body>
+    <div class="postcard">
+        <div class="postcard-header">
+            <div class="postcard-title">My Postcard</div>
+            <div class="postcard-image-container">
+                <img class="postcard-image"
+                    src="https://images.seeklogo.com/logo-png/24/2/super-mario-logo-png_seeklogo-247880.png" alt="">
+            </div>
+        </div>
+
+        <div class="postcard-body">
+            <div class="body-left">
+                <p> Hello from the Mushroom Kingdom!<br>
+                    While Mario and Luigi are busy taking down Bowser,
+                    we’ve been building this postcard using only HTML and CSS.<br>
+                    No fire flowers or Super Stars needed — just code!</p>
+            </div>
+            <div class="body-right">
+                <input type="text" placeholder="Name">
+                <input type="text" placeholder="Email">
+                <input type="text" placeholder="Comment">
+            </div>
+        </div>
+
+        <div class="postcard-footer">
+            <button class="send-button">Send My Postcard</button>
+        </div>
+    </div>
+
+</body>
+
+</html>
